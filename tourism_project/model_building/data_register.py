@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def register_data(data_path='tourism_project/data/tourism.csv'):
+def register_data(data_path='/content/tourism.csv'): # Corrected data_path
     if not os.path.exists(data_path):
         raise FileNotFoundError(f"Data file not found at {data_path}. Please ensure tourism.csv is uploaded.")
 
