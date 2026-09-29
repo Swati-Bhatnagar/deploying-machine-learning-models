@@ -9,7 +9,7 @@ def prepare_data(data_path='/content/tourism.csv'):
     with mlflow.start_run(run_name="Data Preparation"): # Use a specific run name for clarity
         # Log data path and initial data shape
         mlflow.log_param("data_path", data_path)
-        
+
         df = pd.read_csv(data_path)
         mlflow.log_metric("initial_rows", df.shape[0])
         mlflow.log_metric("initial_cols", df.shape[1])
