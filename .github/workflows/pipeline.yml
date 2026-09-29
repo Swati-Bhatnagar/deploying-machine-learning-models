@@ -1,6 +1,6 @@
 name: Tourism Project Pipeline
 
-on: 
+on:
   push:
     branches:
       - main  # Automatically triggers on push to the main branch
